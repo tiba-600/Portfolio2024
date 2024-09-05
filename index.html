@@ -8,79 +8,103 @@
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="static/css/reset.css">
     <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Portfolio</h1>
-            </div>
-            <ul class="items">
-                <li>
-                    <a href="#aboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">contact</a>
-                </li>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-scroll">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#overmij">Over Mij</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#skills">Vaardigheden</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#projects">Projecten</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#opleiding">Opleiding</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
 
     <main>
-        <div class="home">
 
-            <div class="home__foto">
-                <div class="background"><img src="static/img/unnamed (3).jpg" alt="" srcset=""></div>
+        <section class="home" id="overmij">
+            <div class="home__flex">
 
-            </div>
-
-            <div class="home_flex">
-                <div class="home__naam">
-                    <h1 class="naam__title">
-                        <span>Tiba</span>
-                        <span class="naam__title__richt">Abbas</span>
-
-                    </h1>
+                <div class="home__img">
+                    <img src="./static/img/unnamed (3).jpg" alt="">
                 </div>
 
-                <div class="home__social">
-                    <a href="https://www.instagram.com/tiba_alobeidi/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/tiba-jaafar-408646266/"><i class="fab fa-linkedin-in"></i></a>
-                   <a href="https://github.com/tiba-600"><i class="fab fa-github"></i></a> 
-                </div>
-            </div>
-        </div>
+                <div class="home__text">
+                    <h1>Welkom op mijn portfolio website!</h1>
+                    <h2>Ik ben <span class="home__span"> Tiba Abbas</span></h2>
 
-        <section class="aboutme" id="aboutme">
-            <div class="aboutme__flex">
-
-                <div class="aboutme__img">
-                    <img src="static/img/unnamed (3).jpg" alt="" srcset="">
-                </div>
-
-                <div class="aboutme__text">
-                   <h2>
-                        <span class="block">Hi, Ik ben Tiba.</span> 
-                        <span class="block">Een Web Developer.</span>
-                    </h2>
-                   <h3>Ik ben nog student. <span>Ik ben een student web developer met de ambitie om later als web developer en UX/UI designer te werken. Tijdens mijn studie leg ik de basis voor mijn technische vaardigheden en leer ik de nieuwste webontwikkelingstechnologieën. Ik ben gepassioneerd door het creëren van boeiende en intuïtieve gebruikerservaringen, en ik streef ernaar om zowel functionele als esthetisch aantrekkelijke websites te ontwikkelen.
-
-                    Naast mijn studie ben ik constant bezig met het uitbreiden van mijn kennis en vaardigheden op het gebied van UX/UI design. Mijn doel is om een naadloze synergie te creëren tussen gebruiksvriendelijkheid, visueel ontwerp en technische implementatie in al mijn webprojecten.
-                    
-                    Met mijn achtergrond als web developer en mijn passie voor UX/UI design, hoop ik in de toekomst te kunnen werken aan uitdagende projecten waarin ik beide disciplines kan combineren. Ik geloof dat het samenvoegen van mijn technische expertise met een goed begrip van de gebruikerservaring zal resulteren in hoogwaardige en impactvolle webervaringen voor gebruikers.</span></h3>
+                    <p> Ik ben een student <span class="home__span">Web Developer </span>
+                         en <span class="home__span"> Digitale Vormgeving.</span> 
+                         Gepassioneerd over het creëren van innovatieve en visueel
+                          aantrekkelijke digitale oplossingen. Ontdek mijn creatieve
+                           projecten en technische vaardigheden, van dynamische 
+                           websites tot interactieve gebruikersinterfaces.
+                            Samen kunnen we de digitale wereld verkennen
+                             en grenzen verleggen. <span class="home__span">Laten we samenwerken!</span>
+                    </p>
                 </div>
             </div>
         </section>
 
+        <section class="aboutme" id="opleiding">
+
+            <div class="title opleiding--title">
+                <h1>Opleiding</h1>
+              </div>
+              
+            <div class="about__flex">
+
+                <div class="about__pgrammeren">
+                    <h1> Web Developer</h1>
+                    <p>Bij programmeren leren we verschillende programmeertalen en hoe we problemen kunnen oplossen. 
+                        We maken websites responsief en zorgen ervoor dat ze de belangrijkste elementen bevatten. 
+                        Daarnaast leren we hoe we databases kunnen beheren. 
+                        We houden rekening met mensen met beperkingen en leren hoe we websites toegankelijk kunnen maken voor iedereen.
+                    </p>
+                    
+                </div>
+
+                <div class="about__line"></div> 
+
+                <div class="about__vormgeving">
+                    <h1>Digitale Vormgeving</h1>
+                    <p>
+                        Bij digitale vormgeving leren we meer over design en UX/UI.
+                         We verkennen inspiratiebronnen en ontwikkelen een doordachte benadering van design.
+                          Daarnaast leren we welk gereedschap het beste te gebruiken voor verschillende ontwerpdoeleinden. 
+                        We maken gebruik van vrijwel alle programma's van Adobe en Figma.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
         <section class="Skills" id="skills">
-            <div class="skills__flex">
+            <div class="title">
+                <h1>Vaardigheden</h1>
+              </div>
+            <div class="skills__flex">                
                 <ul class="skills__ul">
                     <li class="skills__li">
                         <i class="fab fa-js"></i>
@@ -120,7 +144,7 @@
 
                     <li class="skills__li">
                         <i class="fab fa-github"></i>
-                        <p>Github</p>
+                        <p>GitHub</p>
                     </li>
 
                     <li class="skills__li">
@@ -136,17 +160,17 @@
                     <li class="skills__li">
                         <i class="fas fa-cut"></i>
                         <p>Adobe illustrator</p>
-                    </li>
-
-                   
-                    
+                    </li> 
                 </ul>
             </div>
         </section>
 
         <section class="Projects" id="projects">
+            <div class="title">
+                <h1>Projecten</h1>
+              </div>
             <div class="Projects__flex">
-                <div class="project__one">
+                <div class="project__one project--max">
                     <div class="Projects__foto">
                         <img src="./static/img/350e4718bbaf6c27e386dc13b1a5491a.jpg" alt="">
                     </div>
@@ -158,18 +182,17 @@
                     
                 </div>
 
-                <div class="project__two">
+                <div class="project__two project--max">
+                    <div class="Projects__foto">
+                        <img src="./static/img/350e4718bbaf6c27e386dc13b1a5491a.jpg" alt="">
+                    </div>
                     <div class="Projects__text">
                         <p>Dat project gaat over een game die we voor school moeten maken. Ik heb me beziggehouden met het ontwerpen van de CSS en HTML, evenals de tutorial. Mijn collega heeft zich beziggehouden met de JavaScript, omdat voor deze game twee collega's samen moeten werken.</p>
                            <a href="https://pgmgent-atwork2.github.io/project-1---workshop---start-2-code-bavo-tiba/"><button>Klik!</button></a>
                     </div>
-
-                    <div class="Projects__foto">
-                        <img src="./static/img/350e4718bbaf6c27e386dc13b1a5491a.jpg" alt="">
-                    </div>
                 </div>
 
-                <div class="project__one">
+                <div class="project__one project--max">
                     <div class="Projects__foto">
                         <img src="./static/img/350e4718bbaf6c27e386dc13b1a5491a.jpg" alt="">
                     </div>
@@ -179,21 +202,20 @@
                     </div>
                 </div>
 
-                <!--<div class="project__two">
-                    <div class="Projects__text">
-                        <p>Dat project gaat over een game die we voor school moeten maken. Ik heb me beziggehouden met het ontwerpen van de CSS en HTML, evenals de tutorial. Mijn collega heeft zich beziggehouden met de JavaScript, omdat voor deze game twee collega's samen moeten werken.</p>
-                           <a href="https://pgmgent-atwork2.github.io/project-1---workshop---start-2-code-bavo-tiba/"><button>Klik!</button></a>
-                    </div>
-
+                <div class="project__two project--max">
                     <div class="Projects__foto">
                         <img src="./static/img/350e4718bbaf6c27e386dc13b1a5491a.jpg" alt="">
                     </div>
-                </div>-->
+                    <div class="Projects__text">
+                        <p>Ik heb meer projecten, maar ik kan ze niet bij "Projects" plaatsen vanwege het ontbreken van GitHub Pages.</p>
+                           <button>No Klik!</button></a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact">
+   <footer id="contact">
         <div class="card">
             <div class="card__two">
                 <h1>Contact mij</h1>
@@ -210,17 +232,6 @@
                     </div>
                 </div>
 
-                
-                <!--<div class="contact_Gsm">
-                    <h2>Gsm Nummer</h2>
-                    <h3>0032 04 67 81 46 57</h3>
-                </div>-->
-
-               <!-- <div class="contact_email">
-                    <h2>E-mail</h2>
-                   <h3> <a href="https://www.google.com/intl/nl/gmail/about/">tiba2000.abba@gmail.com</h3>
-                </div>-->
-
                 <div class="card__one">
                     <img src="./static/img/898a7ab5a579263a78353b8afd91fb38.jpg" alt="">
                 </div>
@@ -230,10 +241,9 @@
         </div>
     </footer>
 
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="static/js/menu.js"></script>
+    <script src="./static/js/scroll.js"></script>
 </body>
 
 </html>
