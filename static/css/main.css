@@ -393,9 +393,9 @@ justify-content: center;
   }
 
   .Projects__text {
-    width: 18rem;
+    width: 22rem;
     padding-right: 2rem;
-    text-align: center; 
+    /*text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center; 
