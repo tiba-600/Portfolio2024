@@ -121,6 +121,33 @@ nav  {
   }
 }
 
+
+@media (max-width: 772px) {
+  .home__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+   .home__img img {
+    width: 80% !important;
+    height: auto;
+    object-fit: cover;
+   }
+
+   .home__text h1 {
+    padding-top: 2rem;
+   }
+
+   .home__text {
+    max-width: 100% !important;
+    padding: 0rem 2rem;
+   }
+
+   .home__text p, .home__text h1 {
+    width: 100% !important;
+   }
+}
+
 /*.aboutme {
   margin-bottom: 8rem;
   background-color: var(--card);
